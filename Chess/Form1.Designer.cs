@@ -35,8 +35,8 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.blackTurn = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
-			this.whiteClock = new System.Windows.Forms.Label();
 			this.blackClock = new System.Windows.Forms.Label();
+			this.whiteClock = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
@@ -96,25 +96,25 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// whiteClock
-			// 
-			this.whiteClock.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.whiteClock.Location = new System.Drawing.Point(345, 41);
-			this.whiteClock.Name = "whiteClock";
-			this.whiteClock.Size = new System.Drawing.Size(130, 23);
-			this.whiteClock.TabIndex = 4;
-			this.whiteClock.Text = "0:0";
-			this.whiteClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
 			// blackClock
 			// 
 			this.blackClock.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.blackClock.Location = new System.Drawing.Point(344, 277);
+			this.blackClock.Location = new System.Drawing.Point(345, 41);
 			this.blackClock.Name = "blackClock";
 			this.blackClock.Size = new System.Drawing.Size(130, 23);
-			this.blackClock.TabIndex = 5;
+			this.blackClock.TabIndex = 4;
 			this.blackClock.Text = "0:0";
 			this.blackClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// whiteClock
+			// 
+			this.whiteClock.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.whiteClock.Location = new System.Drawing.Point(344, 277);
+			this.whiteClock.Name = "whiteClock";
+			this.whiteClock.Size = new System.Drawing.Size(130, 23);
+			this.whiteClock.TabIndex = 5;
+			this.whiteClock.Text = "0:0";
+			this.whiteClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// timer1
 			// 
@@ -126,8 +126,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(484, 341);
-			this.Controls.Add(this.blackClock);
 			this.Controls.Add(this.whiteClock);
+			this.Controls.Add(this.blackClock);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.blackTurn);
 			this.Controls.Add(this.label2);
@@ -142,14 +142,14 @@
 
 		#endregion
 
-		private System.Windows.Forms.ImageList chessIcon;
 		private System.Windows.Forms.Label whiteTurn;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label blackTurn;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Label whiteClock;
 		private System.Windows.Forms.Label blackClock;
+		private System.Windows.Forms.Label whiteClock;
 		private System.Windows.Forms.Timer timer1;
+		internal System.Windows.Forms.ImageList chessIcon;
 
 	}
 }
